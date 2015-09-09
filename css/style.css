@@ -1,0 +1,425 @@
+/* ---------------------------------------------
+    Benoit Rospars 2013
+    Exemple de CV
+------------------------------------------------
+*/
+
+body{
+    font-family: 'pt_sansregular', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+}
+
+#accueil{
+    font-family: 'capsuularegular', 'pt_sansregular', sans-serif;
+	font-weight: 100;
+    text-align: center;
+    font-size: 3em;
+    font-weight:100;
+    padding: 0;
+    color: #ffffff;
+    color: rgba(175, 239, 225,0.8);
+    margin-top: 3em;
+}
+
+#accueil h1{
+    margin: 0;
+    height: 100px;
+}
+
+#accueil a{
+    margin-top: 0;
+    padding: 0;
+    padding-right: 2%;
+    text-decoration: none;
+    color: #ffffff;
+    color: rgba(175, 239, 225,0.8);
+}
+
+#title{
+	font-family: 'capsuularegular', 'pt_sansregular', sans-serif;
+	font-weight: 100;
+    text-align: center;
+    font-size: 2em;
+    font-weight:100;
+    padding: 0;
+    color: #ffffff;
+    color: rgba(255,255,255,0.8);
+    
+}
+
+
+.menu_aside{
+    position: fixed;
+    z-index: 5;
+    top: 45px;
+    right: 15px;
+    color: #ffffff;
+    color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    text-align:center;
+    list-style: none;
+    font-size: 2em;
+    font-weight:100;
+}
+
+#btn_up{
+    cursor:pointer;
+}
+
+.menu_aside li a{
+    text-decoration: none;
+    color: #ffffff;
+    color: rgba(0,0,0,0.3);
+    padding:5px;
+    width: auto;
+    height: auto;
+}
+
+.menu_aside li:hover a{
+    color: #ffffff;
+    color: rgba(255,255,255,0.8);
+}
+
+.menu_aside li ul {
+    position:absolute;
+    display:none;
+    background: rgba(0,0,0,0);
+ }
+
+.sub_menu_aside:hover, .sub_menu_aside:hover ul{
+    background: rgba(0,0,0,0.3);
+}
+
+.sub_menu_aside:hover{
+     border-radius: 5px 5px 0px 0px;
+}
+
+.sub_menu_aside:hover ul{
+    border-radius: 5px 0px 5px 5px;
+}
+    
+
+.sub_menu_aside:hover ul {
+    display:block;
+    position:absolute;
+    right: 0px;
+    padding: 15px;
+}
+
+
+.sub_menu_aside:hover ul li{
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.sub_menu_aside:hover ul li a:hover{
+    color:rgba(0,0,0,0.3);
+}
+
+.bottom_menu{
+    position:absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: #2ABB9B;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+}
+
+/* Common style for pseudo-elements */
+.bottom_menu::before,
+.bottom_menu::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 0.8em;
+	background: #2ABB9B;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #26a286;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+.bottom_menu li{
+    display: inline-block;
+    padding-right: 1%;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.bottom_menu a{
+    text-decoration: none;
+    color: #ffffff;
+    color: rgba(255,255,255,0.8);
+    /* border transparente puis apparente pour faire une transition en fondu */
+    border-bottom: 3px solid rgba(255,255,255,0);
+    
+    /* Petite animation de border*/
+    -moz-transition: color .3s, border .5s;
+    -webkit-transition: color .3s, border .5s;
+    -o-transition: color .3s,border .5s;
+    transition: color .3s, border .5s;
+}
+
+.bottom_menu a:hover{
+    color: #CCCCCC;
+    color: rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(0,0,0,0.3);
+}
+
+
+header{
+    text-align: center;
+    font-size: 3em;
+    font-weight:100;
+    padding: 0;
+    color: #ffffff;
+    color: rgba(255,255,255,0.8);
+    background: #2ABB9B;
+    margin: 0;
+    padding-bottom: 1%;
+    border: 1px solid;
+    
+}
+
+header p{
+    display: inline-block;
+    text-align: left;
+    font-size: .5em;
+    margin: 0;
+    max-width: 30%;
+    padding: 10px;
+    border-top: 3px solid;
+}
+
+header .icon-phone, .icon-envelope{
+    width: auto;
+    height: 1em;
+    padding: 2px 5px 0px 0px;
+}
+
+header .pp{
+    display: inline-block;
+    border-radius: 100%;
+    width: 8%;
+    vertical-align: top;
+}
+.menu {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.menu ul{
+    list-style: none;
+    font-size: 0.5em;
+}
+
+.menu li{
+    display: inline-block;
+    padding-right: 1%;
+}
+.menu a{
+    text-decoration: none;
+    color: #CCCCCC;
+    color: rgba(0,0,0,0.3);
+    /* border transparente puis apparente pour faire une transition en fondu */
+    border-bottom: 3px solid rgba(255,255,255,0);
+    
+    /* Petite animation de border*/
+    -moz-transition: color .2s, border .5s;
+    -webkit-transition: color .2s, border .5s;
+    -o-transition: color .2s,border .5s;
+    transition: color .2s, border .5s;
+}
+
+.menu a:hover{
+    color: #ffffff;
+    color: rgba(255,255,255,0.8);
+    border-bottom: 3px solid rgba(255,255,255,0.8);
+}
+
+
+section{
+    display: block;
+    position: relative;
+    z-index:0;
+    text-align:center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: white;
+    font-weight:100;
+    font-size: 1.2em;
+}
+
+
+section h2{
+    font-weight:100;
+    font-size: 2em;
+	font-family: 'capsuularegular', 'pt_sansregular', sans-serif;
+    color: rgba(232, 123, 100,0.8);
+	padding: 0;
+	margin: 0;
+}
+
+section p{
+	position: relative;
+	width: 30%;
+	left: 35%;
+}
+
+#poste{
+    margin-top: -2.5%;
+    width: 101%;
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+#poste h2{
+	display:inline-block;
+}
+
+#poste span{
+	font-weight:100;
+    font-size: 2em;
+	color: rgba(232, 123, 100,0.8);
+	margin: 0;
+	padding: 3px;
+}
+
+.separateur{
+    position:relative;
+    width: 40%;
+    left: 30%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: 2px solid  rgba(42, 187, 155,0.5);
+    border-radius: 3px;
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+#aboutme span{
+    display: inline-block;
+    width: 50%;
+    text-align:center;
+}
+#aboutme meter{
+    width: 48%;
+}
+
+#contact{
+    background: #2ABB9B;
+    transform: rotate(0deg);
+    color: rgba(255,255,255,0.8);
+}
+
+#contact h2{
+    color: rgba(255,255,255,0.8);
+}
+
+#contact form{
+    position:relative;
+    width: 40%;
+    left: 30%;
+    text-align:left;
+}
+
+#contact #objet{
+    width: 40%;
+}
+#contact #email{
+    width: 30%;
+}
+
+form input, textarea{
+    border-radius: 3px;
+    font-family: 'capsuularegular', 'pt_sansregular', sans-serif;
+    font-size: 1em;
+    font-weight:200;
+    color: rgba(0,0,0,0.6);
+    margin: 3px;
+    border: 0px solid;
+    background: rgba(255,255,255,0.9);
+}
+
+form fieldset{
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+form textarea{
+    width: 100%;
+    height: 6em;
+}
+
+form input{
+    height: 1.5em;
+}
+form :valid{
+    box-shadow: 0 0 2px 1px #2ABB9B;
+}
+
+form :invalid{
+    box-shadow: 0 0 3px 3px #EF9B85;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.4)
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.4)  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,0.4)  
+}
+
+:-ms-input-placeholder {  
+   color: rgba(0,0,0,0.4)  
+}
+/*
+table{
+    width: 500px;
+    text-align:center;
+}
+
+tr{
+    height: 30px;
+}
+
+span{
+    float: left;
+    width: 120px;
+}*/
