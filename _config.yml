@@ -1,0 +1,14 @@
+# Site settings
+title: Benoit Rospars
+email: benoit.rospars@hotmail.fr
+description: > # this means to ignore newlines until "baseurl:"
+  I'm Benoit Rospars, a frontend developer based in France. You can find
+  here some of my work and articles about frontend and more.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://brospars.github.io" # the base hostname & protocol for your site
+twitter_username: benuuts
+github_username:  brospars
+permalink: /:categories/:title
+
+# Build settings
+markdown: kramdown

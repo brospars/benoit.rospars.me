@@ -1,51 +1,91 @@
-<!DOCTYPE html>
-<html>
-  	<head>
-    	<meta charset='utf-8'>
-    	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+---
+layout: default
+---
 
-    	<title>Benoit Rospars</title>
-        <link  rel="stylesheet" href="fonts/fonts.css" media="all"/>
-        <link  rel="stylesheet" href="css/style.css" media="all"/>
-        
-        <style>html {
-                background: url(img/image_accueil.jpg) no-repeat center center fixed; 
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                }
-        </style>
-	</head>
-	<body>
-        <div class="landing">
-            <h1>BENOIT ROSPARS</h1>
-            <div class="align-left">
-                <div class="holdhide">
-                    <div class="holdhide-row">
-                        <span class="holdhide-txt">Hi ! I'm Benoit Rospars,</span>
-                        <span class="holdhide-underline"></span>
-                    </div>
-                    <div class="holdhide-row">
-                        <span class="holdhide-txt">a web developer at Impactiv</span>
-                        <span class="holdhide-underline"></span>
-                    </div>
-                    <div class="holdhide-row">
-                        <span class="holdhide-txt">and a professional coffee drinker.</span>
-                        <span class="holdhide-underline"></span>
-                    </div>
-                </div>
-            </div>
-            <a href="http://www.twitter.com/benuuts"><span class="icon-twitter"></span></a>
-            <a href="https://github.com/brospars/"><span class="icon-github"></span></a>
-            <a href="mailto:&#098;&#101;&#110;&#111;&#105;&#116;&#046;&#114;&#111;&#115;&#112;&#097;&#114;&#115;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><span class="icon-envelope"></span></a>
-        </div>
-        
-        <ul class="bottom_menu ss-style-doublediagonal">
-            <li><a href="https://github.com/brospars/">Github</a></li>
-            <li><a href="pdf/cv-creatif-benoit-rospars.pdf">CV</a></li>
-            <li><a href="mailto:&#098;&#101;&#110;&#111;&#105;&#116;&#046;&#114;&#111;&#115;&#112;&#097;&#114;&#115;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#102;&#114;">Contact</a></li>
-        </ul>
-    </body>
-</html>
+<div class="home">
+
+    <h1 class="page-heading">About Me</h1>
+    <img class="" src="{{ site.baseurl }}/img/grenoble-lans.jpg" />
+    <p>
+        I'm Benoit Rospars a frontend developer based in Grenoble, France. I'm working as a developer at Impactiv since 2013, we made a web app to display and manage digital signages using AngularJs and Node-Webkit. Im passionate about design, frontend, tech and startups.<br/> 
+        One of my dream is to work in the valley one day (soon I hope).<br/><br/>
+        I have {{ site.time | date: '%y' | minus:13}}+ years experience working in web companies and with clients providing front-end development.<br/> 
+        My skills include the followings :
+    </p>
+    <ul>
+        <li>
+            Javascript ★★★★☆
+            <ul>
+                <li>AngularJs</li>
+                <li>React</li>
+                <li>NodeJs</li>
+                <li>jQuery</li>
+            </ul>
+        </li>
+        <li>
+            HTML5 / CSS ★★★★★
+            <ul>
+                <li>SASS</li>
+                <li>Responsive design</li>
+            </ul>
+        </li>
+        <li>
+            Wordpress ★★★☆☆
+            <ul>
+                <li>Custom Themes</li>
+                <li>Plugins</li>
+            </ul>
+        </li>
+        <li>PHP/Symfony2 ★★★☆☆</li>
+        <li>JAVA/Android ★★☆☆☆</li>
+    </ul>
+    
+    <h3>Contact</h3>
+    <p>
+        Want to get in touch ? You can send me a mail via my contact page or send me a tweet.<br>
+    </p>
+    
+    <h3>Timeline</h3>
+    <table class="timeline-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12.2015</td>
+                <td><i class="fa fa-github" aria-hidden="true"></i></td>
+                <td>Realised <a href="#">Gridy CSS Grid</a></td>
+            </tr>
+            <tr>
+                <td>07.2014</td>
+                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                <td>Hired as a fulltime developer at <a href="http://impactiv.fr">Impactiv</a></td>
+            </tr>
+            <tr>
+                <td>07.2014</td>
+                <td><i class="fa fa-graduation-cap" aria-hidden="true"></i></td>
+                <td>Professionnal licence graduation</td>
+            </tr>
+            <tr>
+                <td>08.2013</td>
+                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                <td>Intership at <a href="http://impactiv.fr">Impactiv</a></td>
+            </tr>
+            <tr>
+                <td>07.2010</td>
+                <td><i class="fa fa-graduation-cap" aria-hidden="true"></i></td>
+                <td>Baccalaureat graduation</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>About this site</h3>
+    <p>
+        This site is made using jekyll and hosted on Github Pages under brospars/brospars.github.io repository. 
+        All code or snippets you see on this site are free to use.
+    </p>
+</div>
