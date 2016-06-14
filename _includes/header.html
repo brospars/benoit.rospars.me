@@ -5,16 +5,19 @@
         <h2 class="profile-sub-title">Web Developer</h2>
     </div>
     <ul class="side-menu">
-        <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="/">Me</a></li>
-        <li><a href="/snippets.html">Snippets</a></li>
-        <li><a href="/articles.html">Articles</a></li>
-        <li>
-            <a href="#">Projects</a>
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in layout.navigation %}
+            {% assign urllink = link.url|remove:'.html' %}
+            <li {% if url == urllink %}class="active"{% endif %}>
+                 <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
+            </li>
+        {% endfor %}
+        <li class="medium-hidden">
+            <a href="">Projects</a>
             <ul class="side-sub-menu">
                 <li><a href="http://brospars.github.io/gridy/">Gridy CSS Grid</a></li>
             </ul>
         </li>
-        <li><a href="#">Contact</a></li>
     </ul>
     <ul class="social-menu">
         <li><a href="https://www.linkedin.com/in/rosparsbenoit"><i class="fa fa-linkedin"></i></a></li>

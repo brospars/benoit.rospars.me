@@ -177,6 +177,42 @@ img{
     margin: 2rem 0;
 }
 
+@media (max-width: $max-width) {
+    .site-header{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .side-menu{
+        padding:0;
+        text-align: center;
+    }
+    
+    .side-menu li{
+        position: relative;
+        display: inline-block;
+        margin: 0.5rem;
+        vertical-align: middle;
+    }
+    
+    .side-menu li.medium-hidden{
+        display: none;
+    }
+    
+    .social-menu {
+        position: relative;
+        margin: 0;
+        margin-top: 40px;
+        padding:0;
+    }
+    
+    .page-wrapper{
+        margin-left: 0;
+        padding: 2rem 2rem;
+    }
+}
+
 
 
 

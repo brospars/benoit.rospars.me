@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://brospars.github.io" # the base hostname & protocol for your site
 twitter_username: benuuts
 github_username:  brospars
+repository: brospars/brospars.github.io
 permalink: /:categories/:title
 
 # Build settings
