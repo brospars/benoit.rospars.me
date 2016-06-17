@@ -5,6 +5,7 @@ date: "2016-06-11 18:00:00 +0200"
 author: benoit
 version: 1.0.0
 categories: snippets
+comments: true
 post_description: If you are using fixed backgrounds on your website, you may experience issues on IE (I'm on IE11 Windows 8). Here's how to fix it.
 ---
 

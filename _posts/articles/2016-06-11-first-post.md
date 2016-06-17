@@ -5,6 +5,7 @@ date: "2016-06-11 18:00:00 +0200"
 author: benoit
 version: 1.0.0
 categories: articles
+comments: true
 post_description: Lorem markdownum herbas; equorum regia funera, erat in pari nurus nymphe inveni.Ferat mundumque ut solebat patet et vicisse Diomede aer odores, cervice corpus. Dedit et infelix tanti passu et unda laurea.
 ---
 
