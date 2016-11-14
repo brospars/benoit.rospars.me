@@ -23,4 +23,6 @@ I'm sure it will seem obvious to a lot of you, but I'm not a git expert and befo
 
 If you have a better way to do so, feel free to let me know.
 
+*Edit : * Github has now a feature (in the repository settings) that let's you choose the branch on which your github page site is (see below). So you may not need this from now on.
 
+![Settings gh-pages Github](/img/article-gh-pages.jpg)
