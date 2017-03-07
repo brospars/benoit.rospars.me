@@ -13,3 +13,7 @@ permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
+
+# SEO
+gems:
+  - jekyll-sitemap
