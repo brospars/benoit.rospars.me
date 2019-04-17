@@ -3,36 +3,23 @@
 $small : 480px;
 $medium : 768px;
 
-$max-width : 960px;
-$margin : 1%;
-
-$factor : ($margin/100%)*100;
-
 /* Calc row width including margin */
 @mixin columnWidth($row) {
-    width: ( (100-(24*$factor)) * ($row/12) + ($row*2-2)*$factor)*1%; 
-}
-
-.gridster-container:after {
-    content:'';
-    display:block;
-    clear: both;
+    flex: ($row/12)*100%;
 }
 
 .gridster-container {
     position: relative;
-    display: block;
+    display: flex;
+    flex-flow: wrap;
     width: 100%;
-    max-width: $max-width;
     margin: 0 auto;
-    box-sizing: border-box;
 
     .col {
+        padding: 1em;
+        flex: 100%;
+        align-self:flex-start;
         @include columnWidth(12);
-
-        float: left;
-        margin:$margin;
-        box-sizing: border-box; 
     }
 
 
