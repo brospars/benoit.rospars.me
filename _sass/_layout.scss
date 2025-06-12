@@ -101,6 +101,13 @@ $max-width : 960px;
     width: 35px;
     height: 35px;
     line-height: 35px;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        vertical-align: middle;
+        fill: $grey-color-dark;
+    }
 }
 
 
@@ -147,6 +154,14 @@ img{
 }
 
 /* Post */
+.posts-container{
+    margin-top: 200px;
+
+    .post{
+        margin-bottom: 2rem;
+    }
+}
+
 .post{
     position: relative;
 }
@@ -211,6 +226,10 @@ img{
 
     .page-wrapper{
         margin-left: 0;
+    }
+
+    .posts-container{
+        margin-top: 0;
     }
 }
 
